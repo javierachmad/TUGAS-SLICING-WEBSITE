@@ -30,8 +30,24 @@
 
 .Li-Navbar:hover {
     background-color: green;
-    transition: .5s ease-in-out;
+    transition:  ease-in-out;
     transition-delay: .1s;
+    border-radius: 10px;
+}
+
+
+/* Efek saat di-hover (laptop/PC) */
+.Li-Navbar:hover {
+    background-color: green;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Efek saat disentuh/ditekan langsung di HP */
+.a-navbar:active,
+.a-navbar:focus {
+    background-color: green;
+    color: aliceblue !important;
     border-radius: 10px;
 }
 
@@ -155,7 +171,7 @@
     font-size: 22px;
 }
 
-/* KARTU FORM KONTAK TERPISAH */
+
 .contact-card {
     background-color: aliceblue;
     width: 90%;
@@ -237,7 +253,7 @@
     }
 
     .Li-Navbar {
-        font-size: 16px; /* Ukuran menu dipas-kan agar tidak terpotong */
+        font-size: 16px; 
         padding: 8px 10px;
         margin: 2px;
     }
@@ -248,9 +264,9 @@
         min-height: 60vh;
     }
 
-    /* Membesarkan Kartu Konten di Layar HP */
+    
     .a-konten, .contact-card {
-        width: 95%; /* Kartu memenuhi layar HP */
+        width: 95%; 
         max-width: 100%;
         min-height: auto;
         padding: 25px 15px;
