@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.Container-Navbar {
+    background-color: crimson;
+    width: 100%;
+    height: 15vh;
+    min-height: 80px;
+}
+
+.Ul-Navbar {
+    display: flex;  
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Li-Navbar {
+    list-style-type: none;
+    padding: 15px 20px;
+    margin: 5px;
+    color: aliceblue;
+    font-size: 24px;
+}
+
+.Li-Navbar:hover {
+    background-color: green;
+    transition: .5s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 10px;
+}
+
+.a-navbar {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* CONTENT SECTIONS */
+.Container-konten {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 70vh;
+}
+
+.a-konten {
+    background-color: aliceblue;
+    color: crimson;
+    text-decoration: none;
+    font-size: 20px;
+    min-height: 380px;
+    width: 90%;
+    max-width: 520px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+#biodata, #geodata {
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+.img-konten {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px; 
+    object-fit: cover;   
+    object-position: top; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+}
+
+.img-konten2 {
+    background-color: aliceblue;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.b-konten {
+    font: bold;
+    font-size: 20px;
+    padding: 8px 12px;
+}
+
+/* Gabungkan selector parent agar ukurannya pasti berubah */
+.a-konten .b-konten {
+    font-size: 28px;
+    font-weight: bold 
+}
+
+.b-konten:hover {
+    background-color: green;
+    color: aliceblue;
+    transition: .5s ease-in-out;
+    transition-delay: .1s;
+    border-radius: 5px;
+}
+
+/* GRID KARTU PROJECT */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.project-card {
+    background-color: aliceblue;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+    color: crimson;
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+.Footer-konten {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.h1-konten {
+    color: aliceblue;
+    font-size: 22px;
+}
+
+/* KARTU FORM KONTAK TERPISAH */
+.contact-card {
+    background-color: aliceblue;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.form-title {
+    text-align: center;
+    color: crimson;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background-color: #fff;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: crimson;
+    box-shadow: 0 0 5px rgba(220, 20, 60, 0.4);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: crimson;
+    color: aliceblue;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: green;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Navbar menyesuaikan layar HP */
+    .Container-Navbar {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .Ul-Navbar {
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 5px;
+    }
+
+    .Li-Navbar {
+        font-size: 16px; /* Ukuran menu dipas-kan agar tidak terpotong */
+        padding: 8px 10px;
+        margin: 2px;
+    }
+
+    /* Kontainer Konten */
+    .Container-konten {
+        padding: 30px 15px;
+        min-height: 60vh;
+    }
+
+    /* Membesarkan Kartu Konten di Layar HP */
+    .a-konten, .contact-card {
+        width: 95%; /* Kartu memenuhi layar HP */
+        max-width: 100%;
+        min-height: auto;
+        padding: 25px 15px;
+        border-radius: 25px;
+    }
+
+    /* Ukuran Gambar di HP */
+    .img-konten, .img-konten2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Ukuran Teks di HP */
+    .b-konten {
+        font-size: 18px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input, 
+    .form-group textarea {
+        font-size: 16px; /* Menjaga agar browser HP tidak otomatis zoom in saat mengetik */
+        padding: 12px;
+    }
+
+    .btn-submit {
+        padding: 14px;
+        font-size: 16px;
+    }
+}
