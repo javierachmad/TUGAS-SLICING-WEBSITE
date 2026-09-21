@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Menampilkan isi biodata di index2.html jika elemennya ada
   const biodata = document.getElementById("biodata");
   if (biodata) {
     biodata.innerHTML = `
@@ -7,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
   }
 
-  // Menampilkan isi geodata di about.html jika elemennya ada
   const geodata = document.getElementById("geodata");
   if (geodata) {
     geodata.innerHTML = `
@@ -21,20 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
-      e.preventDefault(); // Mencegah reload halaman
+      e.preventDefault();
 
       const nama = document.getElementById("nama").value;
-
-      // Menampilkan Alert
       alert(
         `Pesan berhasil dikirim! Terima kasih, ${nama}. Saya akan segera menghubungi Anda.`,
       );
-
-      // Mengosongkan form kembali setelah dikirim
       contactForm.reset();
     });
   }
 });
 
-// Mengaktifkan fitur CSS :active di iOS/iPhone
-document.addEventListener("touchstart", function() {}, true);
+document.addEventListener("touchstart", function () {}, true);
