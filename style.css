@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* NAVBAR */
+
 .Container-Navbar {
     background-color: crimson;
     width: 100%;
@@ -36,14 +36,14 @@
 }
 
 
-/* Efek saat di-hover (laptop/PC) */
+
 .Li-Navbar:hover {
     background-color: green;
     transition: 0.2s ease-in-out;
     border-radius: 10px;
 }
 
-/* Efek saat disentuh/ditekan langsung di HP */
+
 .a-navbar:active,
 .a-navbar:focus {
     background-color: green;
@@ -56,7 +56,7 @@
     text-decoration: none;
 }
 
-/* CONTENT SECTIONS */
+
 .Container-konten {
     background-color: white;
     display: flex;
@@ -118,7 +118,16 @@
     padding: 8px 12px;
 }
 
-/* Gabungkan selector parent agar ukurannya pasti berubah */
+
+.skill-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-top: 15px;
+    background-color: transparent;
+    mix-blend-mode: multiply; 
+}
+
 .a-konten .b-konten {
     font-size: 28px;
     font-weight: bold 
@@ -157,7 +166,6 @@
     margin-bottom: 8px;
 }
 
-/* FOOTER */
 .Footer-konten {
     background-color: blue;
     display: flex;
@@ -239,7 +247,7 @@
 
 
 @media screen and (max-width: 768px) {
-    /* Navbar menyesuaikan layar HP */
+   
     .Container-Navbar {
         height: auto;
         padding: 10px 0;
@@ -258,7 +266,7 @@
         margin: 2px;
     }
 
-    /* Kontainer Konten */
+    
     .Container-konten {
         padding: 30px 15px;
         min-height: 60vh;
@@ -273,7 +281,7 @@
         border-radius: 25px;
     }
 
-    /* Ukuran Gambar di HP */
+    
     .img-konten, .img-konten2 {
         width: 150px;
         height: 150px;
@@ -294,7 +302,7 @@
 
     .form-group input, 
     .form-group textarea {
-        font-size: 16px; /* Menjaga agar browser HP tidak otomatis zoom in saat mengetik */
+        font-size: 16px; 
         padding: 12px;
     }
 
