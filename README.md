@@ -4,3 +4,10 @@ isi web itu sendiri berisi tentang data diri saya dan keahlian saya
 untuk fiturnya mungkin di bagian javascriptnya hanya pada contacme yang bisa
 mengirim nama,email, dan pesan di webnya. Selain itu di bagian contacme itu ada link yang bisa diklik
 yang nantinya akan mengarahkan langsung ke halaman github saya
+
+### Tampilan Desktop
+![Tampilan Desktop](Desktop.png)
+### Tampilan Tablet
+![Tampilan Tablet](Tablet.png)
+### Tampilan Mobile
+![Tampilan Mobile](Mobile.png)
