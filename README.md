@@ -7,8 +7,8 @@ yang nantinya akan mengarahkan langsung ke halaman github saya
 Di bagian My skill saya tambahkan link video pembelajaran acak yang bisa diakses dengan menekan gambar yang tersedia
 
 ### Tampilan Desktop
-![Tampilan Desktop](Desktop.png)
+![Tampilan Desktop](assets/Desktop.png)
 ### Tampilan Tablet
-![Tampilan Tablet](Tablet.png)
+![Tampilan Tablet](assets/Tablet.png)
 ### Tampilan Mobile
-![Tampilan Mobile](Mobile.png)
+![Tampilan Mobile](assets/Mobile.png)
